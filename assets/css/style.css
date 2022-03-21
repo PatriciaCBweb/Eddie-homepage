@@ -95,7 +95,6 @@ nav a{
 /* Bloque 1 */
 .block{
     min-width: 272px;
-    max-width: 543px;
     margin-bottom: 15px;
 }
 
@@ -188,7 +187,6 @@ nav a{
 .services{
     display: flex;
     flex-direction: column;
-    min-width: 375px;
     max-width: 1440px;
 }
 
@@ -273,7 +271,7 @@ nav a{
 }
 
 .work{
-    max-width: 545px;
+    max-width: 560px;
 }
 
 .work img{
@@ -458,7 +456,7 @@ nav a{
 
 /* bloque 3 */
     #p3-h1{
-        margin: 210px 0 40px 120px;
+        margin: 210px 0 40px 130px;
         width: 450px;
         padding: 0;
     }
@@ -466,12 +464,13 @@ nav a{
     .services{
         flex-direction: row;
         justify-content: start;
-        gap: 2em;
-        margin-left: 140px;
+        gap: 4em;
+        margin-left: 160px;
     }
 
     .service-block{
         margin-top: 40px;
+        max-width: 341px;
     }
 
     #second-service-block{
@@ -495,21 +494,23 @@ nav a{
 
 /* bloque 4 */
     #p4-h1{
-        margin: 130px 0 0 120px;
+        margin: 130px 0 0 130px;
         max-width: 500px;
         padding: 0;
     }
 
     .works-block{
+        max-width: 1150px;
         margin-top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 0 35px;
-        margin-left: 120px;
+        grid-gap: 0 1em;
+        margin-left: 130px;
+        position: relative;
     }
     
     .work{
-        width: 545px; 
+        max-width: 545px; 
     }
 
     .right-block{
@@ -526,9 +527,16 @@ nav a{
         line-height: 36px;
         margin: 0;
     }
-    
+    .seeMore{
+        justify-self: end;
+        padding-right: 25px;
+        position: relative;
+        bottom: 40px;
+    }
+
     #seeMore{
         font-size: 24px;
         line-height: 36px;
+        
     }
 }
