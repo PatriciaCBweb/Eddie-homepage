@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edie</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+<!-- header -->
+        <header>
+            <div class="logo">
+                <h1>Edie</h1>
+            </div>
+    <!-- nav -->
+            <nav id="menu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                    <a href=""><li>Home</li></a>
+                     <a href=""><li>Services</li></a>
+                     <a href=""><li>Our Works</li></a>
+                     <a href=""><li>Clients</li></a>
+                     <a href=""><li>Contact</li></a>
+                </ul>
+            </nav>
+            <span onclick="openNav()" class="openbtn">&#9776</span>
+        </header>
+
+<!-- main -->
+        <main>
+            <div class="block"> <!-- bloque 1 -->
+                <h2>Unhappy with your website?</h2>
+                <h1>We create beautiful and fast web services</h1>
+            </div>
+            <div class="firstImg">
+                <img src="assets/images/heroImage.jpg" alt="Work Meeting">
+            </div>
+            <div class="block"> <!-- bloque 2 -->
+                <h1 id="h1-p2">Story, emotion and purpose</h1>
+                <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+                <label for="email" class="label">Want us to contact you</label>
+                <div class="block-contact">
+                    <form action="">
+                        <div class="input-group-join">
+                            <input type="email" name="" id="email" placeholder="Email">
+                            <button>Join</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="block"> <!-- bloque 3 -->
+                <h1 id="p3-h1">We offer high demand services</h1>
+                <div class="services">
+                    <div class="service-block">
+                        <div class="icon" id="blue-icon">
+                            <i class="material-icons">mode_edit</i>
+                        </div>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <button>Get started</button>
+                    </div>
+                    <div class="service-block" id="second-service-block">
+                        <div class="icon" id="green-icon">
+                            <i class="material-icons">unfold_more</i>
+                        </div>
+                        <h2>Front End</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <button>Get started</button>
+                    </div>
+                    <div class="service-block">
+                        <div class="icon" id="orange-icon">
+                            <i class="material-icons">list</i>
+                        </div>
+                        <h2>Back End</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <button>Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="block"> <!-- bloque 4 -->
+                <h1 id="p4-h1">Good design means good business</h1>
+                <div class="works-block">
+                    <div class="work right-block">
+                        <img src="assets/images/smarthome.jpg" alt="Smart home dashboard">
+                        <h3>Full stack application</h3>
+                        <h2>Smart home dashboard</h2>
+                    </div>
+                    <div class="work">
+                        <img src="assets/images/onboard.png" alt="Onboard application">
+                        <h3>UX/UI design</h3>
+                        <h2>Onboard application</h2>
+                    </div>
+                    <div class="work right-block">
+                        <img src="assets/images/booking.png" alt="Booking system">
+                        <h3>Mobile application</h3>
+                        <h2>Booking system</h2>
+                    </div>
+                    <div class="work">
+                        <img src="assets/images/juice-product.png" alt="Juice product homepage">
+                        <h3>Front End applicati on</h3>
+                        <h2>Juice product homepage</h2>
+                    </div>
+                </div>
+                <a href="" id="seeMore">See more &nbsp;&rarr;</a>
+            </div>
+        </main>
+
+<!-- footer -->
+        <footer></footer>
+    </div>
+
+    <script>
+        function openNav(){
+            document.getElementById('menu').style.height = "100%";
+        }
+        function closeNav(){
+            document.getElementById('menu').style.height = "0%";
+        }
+    </script>
+</body>
+</html>
