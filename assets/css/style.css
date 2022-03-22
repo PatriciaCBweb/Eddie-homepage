@@ -185,14 +185,12 @@ nav a{
 }
 
 .services{
-    display: flex;
-    flex-direction: column;
     max-width: 1440px;
 }
 
 .service-block, #second-service-block{
     max-width: 341px;
-    padding: 10px;
+    padding: 7px;
 }
 
 #second-service-block{
@@ -302,6 +300,143 @@ nav a{
     text-decoration: none;
 }
 
+/* bloque 5 */
+.b5-text h2{
+    color: var(--orange-color);
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 0;
+    margin-top: 100px;
+}
+
+.b5-text h1{
+    font-size: 36px;
+    line-height: 54px;
+    margin-left: 0;
+}
+
+.b5-text p{
+    margin-left: 0;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.b5-images{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    grid-gap: 0.5em;
+    width: 100%;
+    min-width: 320px;
+}
+
+.col1 img{
+    position: relative;
+    top: 22%;
+    width: 100%;
+    border-radius: 24px;
+}
+
+#person-top{
+    width: 90%;
+    border-radius: 24px;
+}
+
+#person-bottom{
+    width: 100%;
+    border-radius: 24px;
+}
+
+/* bloque 6 */
+#b6 h1{
+    margin: 100px 0 20px 0; 
+    padding-right: 0;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.person-opinion{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.person-opinion img{
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.person-name h3{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.person-name p{
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 0;
+    color: var(--grey-font-color);
+
+}
+
+/* Footer */
+footer{
+    background-color: #100E1D;
+    padding: 36px 41px;
+}
+
+#footer-left, #footer-center{
+    margin-bottom: 64px;
+}
+
+#footer-left li{
+    color: white;
+    font-size: 18px;
+    line-height: 36px;
+    list-style: none;
+}
+
+#footer-center h1{
+    color: white;
+    font-size: 36px;
+    line-height: 52px;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+}
+
+.logos img{
+    width: 24px;
+    margin-right: 12px;
+}
+
+#footer-right label, #footer-right .block-contact{
+    margin-left: 0;
+    min-width: 291px;
+}
+
+footer p{
+    margin-top: 154px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #A9A9A9;
+
+}
+
+.link{
+    color: #A9A9A9;
+    text-decoration: none;
+    font-weight: 700;
+}
+
 /*//////////////////////////////////*/
 /*//////////// TABLET //////////////*/
 /*//////////////////////////////////*/
@@ -337,6 +472,24 @@ nav a{
         font-size: 14px;
         line-height: 20px;
     }
+
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 2em;
+    }
+
+    .work{
+        margin-right: 0;
+        margin-left: auto;
+        padding: 0 4%;
+    }
+
+    .right-block{
+        margin-left: 0;
+        margin-right: auto;
+    }
 }
 
 /*//////////////////////////////////*/
@@ -345,6 +498,11 @@ nav a{
 @media (min-width: 1024px){
     .container{
         max-width: 1440px;
+    }
+
+    .block{
+        max-width: 1103px;
+        margin: auto;
     }
 
     header{
@@ -402,13 +560,13 @@ nav a{
     .block h2{
         font-size: 18px;
         line-height: 27px;
-        margin-left: 265px;
+        margin-left: 7%;
     }
     
     .block h1{
         font-size: 48px;
         line-height: 72px;
-        margin-left: 265px;
+        margin-left: 7%;
         width: 543px;
         margin-bottom: 42px;
     }
@@ -426,18 +584,18 @@ nav a{
         width: 366px;
         font-size: 18px;
         line-height: 27px;
-        margin-left: 265px;
+        margin-left: 7%;
     }
 
     .label{
         font-size: 14px;
         line-height: 21px;
-        margin-left: 265px;
+        margin-left: 7%;
     }
     
     .block-contact{
         width: 350px;
-        margin-left: 265px;
+        margin-left: 7%;
         margin-top: 9px;
         
     }
@@ -456,16 +614,17 @@ nav a{
 
 /* bloque 3 */
     #p3-h1{
-        margin: 210px 0 40px 130px;
-        width: 450px;
-        padding: 0;
+        margin: 210px 0 40px 0;
+        width: 400px;
+        font-size: 36px;
+        line-height: 54px;
     }
 
     .services{
-        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: start;
-        gap: 4em;
-        margin-left: 160px;
+        gap: 2em;
     }
 
     .service-block{
@@ -494,9 +653,10 @@ nav a{
 
 /* bloque 4 */
     #p4-h1{
-        margin: 130px 0 0 130px;
-        max-width: 500px;
-        padding: 0;
+        margin: 130px 0 0 0;
+        max-width: 450px;
+        font-size: 36px;
+        line-height: 54px;
     }
 
     .works-block{
@@ -505,7 +665,6 @@ nav a{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 0 1em;
-        margin-left: 130px;
         position: relative;
     }
     
@@ -538,5 +697,89 @@ nav a{
         font-size: 24px;
         line-height: 36px;
         
+    }
+
+    /* bloque 5 */
+    #b5{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        margin-right: 170px;
+        margin-top: 200px;
+    }
+
+    .b5-text h2{
+        margin-left: 0;
+        margin-top: 120px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .b5-text h1{
+        max-width: 330px;
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .b5-text p{
+        margin-left: 0;
+        margin-top: 15px;
+        max-width: 300px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .b5-images{
+        gap: 1em;
+        max-width: 594px;
+    }
+    
+    #person-top{
+        margin-bottom: 0.5em;
+    }
+
+    /* bloque 6 */
+    #b6 h1{
+        width: 937px;
+        margin: 200px 0 36px 0; 
+        padding-right: 0;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    .person-opinion img{
+        width: 80px;
+        height: 80px;
+        border-radius: 12px;
+        margin-right: 20px;
+    }
+
+    .person-name p{
+        margin-left: 0;
+    }
+
+    /* Footer */
+    footer{
+        background-color: #100E1D;
+        padding-bottom: 25px;
+    }
+
+    #footer-container{
+        max-width: 1110px;
+        margin: 16px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #footer-right label, #footer-right .block-contact{
+        min-width: 350px;
+    }
+
+    footer p{
+        margin-top: 0;
+        font-size: 14px;
     }
 }
